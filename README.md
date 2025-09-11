@@ -191,7 +191,7 @@ If you find our work helpful for your research, please consider citing our work.
 
 This project is licensed under [Apache License 2.0](LICENSE).
 
-## 📧Contact
+## 📧 Contact
 
 If you have any question, please feel free to contact us: BytedanceDouyinContent@bytedance.com
 
