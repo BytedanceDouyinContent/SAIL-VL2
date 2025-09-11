@@ -42,7 +42,7 @@ We are very excited to introduce **SAIL-VL2** 🚀, a state-of-the-art visual la
 - [🙏 Acknowledge](#-acknowledge)
 - [✒️ Citation](#️-citation)
 - [📜 License](#-license)
-- [📧Contact](#-contact)
+- [📧 Contact](#-contact)
 
 
 ## 🎬 Quick Start
