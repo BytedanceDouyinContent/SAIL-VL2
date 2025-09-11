@@ -36,6 +36,9 @@ We are very excited to introduce **SAIL-VL2** 🚀, a state-of-the-art visual la
     - [🌟 Pre-Train](#-pre-train)
     - [🌟 Post-Train](#-post-train)
 - [📈 Experimental Results](#-experimental-results)
+    - [🌟 Performance of 2B series](#-performance-of-2b-series)
+    - [🌟 Performance of 8B series](#-performance-of-8b-series)
+    - [🌟 Performance of Thinking-mode models](#-performance-of-thinking-mode-models)
 - [✒️ Citation](#️-citation)
 
 
@@ -135,17 +138,19 @@ print(response)
 - **RL with a Mixed Reward System:** enhances the model’s reasoning capabilities through a RL stage
 
 ## 📈 Experimental Results
-
+### 🌟 Performance of 2B series
 <div align="center">
   <img src="assets/figures/performance_table_2b.png" width="100%" alt="SAIL-VL2 Performance">
   <i> Overall comparison of the SAIL-VL2 series and existing open-source MLLMs (<4B).</i>
 </div>
 
+### 🌟 Performance of 8B series
 <div align="center">
   <img src="assets/figures/performance_table_8b.png" width="100%" alt="SAIL-VL2 Performance">
   <i> Overall comparison of the SAIL-VL2 series with existing open-source 8B MLLMs and closed-source models.</i>
 </div>
 
+### 🌟 Performance of Thinking-mode models
 <div align="center">
   <img src="assets/figures/performance_rl.png" width="100%" alt="SAIL-VL2 Performance">
   <i> Evaluation results on OpenCompass multimodal reasoning benchmarks.</i>
