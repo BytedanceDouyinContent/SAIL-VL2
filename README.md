@@ -39,7 +39,10 @@ We are very excited to introduce **SAIL-VL2** 🚀, a state-of-the-art visual la
     - [🌟 Performance of 2B series](#-performance-of-2b-series)
     - [🌟 Performance of 8B series](#-performance-of-8b-series)
     - [🌟 Performance of Thinking-mode models](#-performance-of-thinking-mode-models)
+- [🙏 Acknowledge](#-acknowledge)
 - [✒️ Citation](#️-citation)
+- [📜 License](#-license)
+- [📧Contact](#-contact)
 
 
 ## 🎬 Quick Start
@@ -156,11 +159,39 @@ print(response)
   <i> Evaluation results on OpenCompass multimodal reasoning benchmarks.</i>
 </div>
 
+## 🙏 Acknowledge
+
+Our model is built upon numerous outstanding open-source projects, and we are grateful for their contributions. We extend special thanks to the InternVL team, Qwen team, and Apple team for their great base models, and to the BAAI team (Infinity-MM), MAmmoTH-VL team(MAmmoTH-VL-Insturction-12M) for their generous release of data, and to the OpenCompass team for their valuable benchmarks.
 
 ## ✒️ Citation
 
 If you find our work helpful for your research, please consider citing our work.   
 
-```bibtex
-
 ```
+@article{dong2025scalable,
+  title={Scalable vision language model training via high quality data curation},
+  author={Dong, Hongyuan and Kang, Zijian and Yin, Weijie and Liang, Xiao and Feng, Chao and Ran, Jiao},
+  journal={arXiv preprint arXiv:2501.05952},
+  year={2025}
+}
+```
+```
+@misc{
+    sailvl,
+    title = {SAIL-VL: Scalable Vision Language Model Training with High Quality Data Curation},
+    url = {https://huggingface.co/BytedanceDouyinContent/SAIL-VL-2B/},
+    author = {Bytedance Douyin Content Team},
+    month = {December},
+    year = {2024}
+}
+```
+
+
+## 📜 License
+
+This project is licensed under [Apache License 2.0](LICENSE).
+
+## 📧Contact
+
+If you have any question, please feel free to contact us: BytedanceDouyinContent@bytedance.com
+
