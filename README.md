@@ -177,12 +177,12 @@ If you find our work helpful for your research, please consider citing our work.
 ```
 ```
 @misc{
-    sailvl,
-    title = {SAIL-VL: Scalable Vision Language Model Training with High Quality Data Curation},
-    url = {https://huggingface.co/BytedanceDouyinContent/SAIL-VL-2B/},
-    author = {Bytedance Douyin Content Team},
-    month = {December},
-    year = {2024}
+  sailvl,
+  title = {SAIL-VL: Scalable Vision Language Model Training with High Quality Data Curation},
+  url = {https://huggingface.co/BytedanceDouyinContent/SAIL-VL-2B/},
+  author = {Bytedance Douyin Content Team},
+  month = {December},
+  year = {2024}
 }
 ```
 
