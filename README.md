@@ -1,10 +1,10 @@
 # SAIL-VL2
 
 <div align="center">
-  <img src="assets/logo/logo_with_name.jpeg" width="100%" alt="SAIL-VL2 Logo">
+  <img src="assets/logo/logo_with_name.jpeg" width="80%" alt="SAIL-VL2 Logo">
 </div>
 
-<font size=7><div align='center' >  
+<font size=3><div align='center' >  
 [[📖 Technique Report]()] 
 [[🤗 HuggingFace]()]
 [[🔥 Demo]()]
@@ -23,7 +23,7 @@ We are very excited to introduce **SAIL-VL2** 🚀, a state-of-the-art visual la
 - SAIL-VL2 excels in fine-grained visual tasks beyond similar-scale models.
 
 <div align="center">
-  <img src="assets/figures/performance.jpg" width="100%" alt="SAIL-VL2 Performance">
+  <img src="assets/figures/performance.png" width="100%" alt="SAIL-VL2 Performance">
 </div>
 
 ## Contents
@@ -97,8 +97,8 @@ print(response)
 
 
 <div align="center">
-  <img src="assets/figures/framework.jpg" width="100%" alt="SAIL-VL2 Framework">
-  <i> Overview of the SAIL-VL2 framework. The architecture is composed of a vision encoder (SAIL-ViT) that aligns visual inputs into the representation space of the LLM. A lightweight adapter further transforms visual embeddings into tokenized representations, which are jointly processed with linguistic embeddings for multimodal reasoning and prediction. SAIL-VL2 accommodates multiple LLM backbones, ensuring flexibility and scalability across model configurations.</i>
+  <img src="assets/figures/framework.png" width="100%" alt="SAIL-VL2 Framework">
+  <i> Overview of the SAIL-VL2 framework. The architecture is composed of a vision encoder that aligns visual inputs into the representation space of the LLM. A lightweight adapter further transforms visual embeddings into tokenized representations, which are jointly processed with linguistic embeddings for multimodal reasoning and prediction. SAIL-VL2 accommodates multiple LLM backbones, ensuring flexibility and scalability across model configurations.</i>
 </div>
 
 
@@ -106,7 +106,7 @@ print(response)
 ### 🌟 Data construction
 
 <div align="center">
-  <img src="assets/figures/data.jpg" width="100%" alt="SAIL-VL2 Data">
+  <img src="assets/figures/data.png" width="100%" alt="SAIL-VL2 Data">
   <i> Data construction pipeline for SAIL-VL2 training. High-quality multimodal corpora are construted by curating and filtering open-source datasets, and generating synthetic data, with both components systematically organized to meet the requirements of different training stages.</i>
 </div>
 
@@ -117,7 +117,7 @@ print(response)
 - **Multi-task Pre-Training:** strengthens SAIL-VL2’s visual and instruction-following abilities, unfreezes all params, adds instruction-tuning data, uses 180M samples, and skips AdaLRS.
 
 <div align="center">
-  <img src="assets/figures/mtpt_scaling.jpg" width="100%" alt="SAIL-VL2 MTPT Scaling">
+  <img src="assets/figures/mtpt_scaling.png" width="100%" alt="SAIL-VL2 MTPT Scaling">
   <i> Scaling curves of SAIL-VL2-2B during the multi-task pre-training stage. Results are reported on overall benchmarks, natural-scene VQA datasets, and OCR VQA tasks. ’BMK Score’ denotes the average benchmark score.</i>
 </div>
 
@@ -144,6 +144,11 @@ print(response)
 <div align="center">
   <img src="assets/figures/performance_table_8b.png" width="100%" alt="SAIL-VL2 Performance">
   <i> Overall comparison of the SAIL-VL2 series with existing open-source 8B MLLMs and closed-source models.</i>
+</div>
+
+<div align="center">
+  <img src="assets/figures/performance_rl.png" width="100%" alt="SAIL-VL2 Performance">
+  <i> Evaluation results on OpenCompass multimodal reasoning benchmarks.</i>
 </div>
 
 
