@@ -45,7 +45,7 @@ We are very excited to introduce **SAIL-VL2** 🚀, a state-of-the-art visual la
 
 
 ## 🎬 Quick Start
-
+Inference using the non-thinking version of SAIL-VL2
 
 ```python
 import torch
@@ -92,6 +92,56 @@ response = response.split('<|im_end|>')[0].strip()
 print(response)
 
 ```
+
+Inference using the thinking version of SAIL-VL2
+```python
+import torch
+from transformers import AutoTokenizer, AutoModel, AutoProcessor
+from PIL import Image
+
+
+model_path = "your model path"
+
+tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+processor = AutoProcessor.from_pretrained(model_path, trust_remote_code=True)
+device = torch.cuda.current_device()
+model = AutoModel.from_pretrained(model_path, trust_remote_code=True, torch_dtype=torch.bfloat16,).to(device)
+
+print("##### with images")
+cot_prompt = r"You FIRST think about the reasoning process as an internal monologue and then provide the final answer. The reasoning process MUST BE enclosed within <think> </think> tags. The final answer MUST BE put in \boxed{}."
+messages = [
+    {"role": "user", "content": [{"type": "image", "image": 'image_path'}, 
+    {"type": "text", "text": "describe the image" + cot_prompt}]}
+]
+text = processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
+
+image_path = 'your image path'
+image = Image.open(image_path)
+inputs = processor(images=image, text=text, return_tensors="pt", padding=True, truncation=True).to(model.device).to(torch.bfloat16)
+
+generated_ids = model.generate(**inputs, max_new_tokens=512)
+response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+response = response.split('<|im_end|>')[0].strip()
+print(response)
+
+
+print("##### without images")
+cot_prompt = r"You FIRST think about the reasoning process as an internal monologue and then provide the final answer. The reasoning process MUST BE enclosed within <think> </think> tags. The final answer MUST BE put in \boxed{}."
+messages = [
+    {
+        "role": "user",
+        "content": [{"type": "text", "text": "中国的首都是哪里？" + cot_prompt}]
+    }
+]
+text = processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
+inputs = processor(images=None, text=text, return_tensors="pt", padding=True, truncation=True).to(model.device).to(torch.bfloat16)
+generated_ids = model.generate(**inputs, max_new_tokens=512)
+response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+response = response.split('<|im_end|>')[0].strip()
+print(response)
+
+```
+
 
 ## 👀 Introduction
 - **SAIL-VL2 is powerful yet efficient:** With training on 776B tokens, SAIL-VL2 has verified its effectiveness across 106 datasets, achieving state-of-the-art results on a broad spectrum of influential benchmarks under the 2B-parameter scale. Remarkably, even without specialized prompting, the base SAIL-VL2 model delivers highly competitive performance on challenging reasoning benchmarks such as MMMU and MathVista, demonstrating strong out-of-the-box capabilities.
