@@ -167,21 +167,22 @@ Our model is built upon numerous outstanding open-source projects, and we are gr
 If you find our work helpful for your research, please consider citing our work.   
 
 ```
+@misc{yin2025sailvl2technicalreport,
+  title={SAIL-VL2 Technical Report}, 
+  author={Weijie Yin and Yongjie Ye and Fangxun Shu and Yue Liao and Zijian Kang and Hongyuan Dong and Haiyang Yu and Dingkang Yang and Jiacong Wang and Han Wang and Wenzhuo Liu and Xiao Liang and Shuicheng Yan and Chao Feng},
+  year={2025},
+  eprint={2509.14033},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2509.14033}, 
+}
+```
+```
 @article{dong2025scalable,
   title={Scalable vision language model training via high quality data curation},
   author={Dong, Hongyuan and Kang, Zijian and Yin, Weijie and Liang, Xiao and Feng, Chao and Ran, Jiao},
   journal={arXiv preprint arXiv:2501.05952},
   year={2025}
-}
-```
-```
-@misc{
-  sailvl,
-  title = {SAIL-VL: Scalable Vision Language Model Training with High Quality Data Curation},
-  url = {https://huggingface.co/BytedanceDouyinContent/SAIL-VL-2B/},
-  author = {Bytedance Douyin Content Team},
-  month = {December},
-  year = {2024}
 }
 ```
 
