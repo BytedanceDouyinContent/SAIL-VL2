@@ -163,6 +163,7 @@ print(response)
 Our model is built upon numerous outstanding open-source projects, and we are grateful for their contributions. We extend special thanks to the InternVL team, Qwen team, and Apple team for their great base models, and to the BAAI team (Infinity-MM), MAmmoTH-VL team(MAmmoTH-VL-Instruction-12M) for their generous release of data, and to the OpenCompass team for their valuable benchmarks.
 
 ## ✒️ Citation
+All contributors are listed in reverse alphabetical order by last name initial, with equal contributions.
 
 If you find our work helpful for your research, please consider citing our work.   
 
