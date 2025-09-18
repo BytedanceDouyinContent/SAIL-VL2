@@ -5,16 +5,15 @@
 </div>
 
 <font size=3><div align='center' >  
-[[📖 Technique Report]()] 
-[[🤗 HuggingFace]()]
-[[🔥 Demo]()]
+[[📖 Technique Report](https://arxiv.org/abs/2509.14033)] 
+[[🤗 HuggingFace](https://huggingface.co/BytedanceDouyinContent)]
 </div></font>
 
 We are very excited to introduce **SAIL-VL2** 🚀, a state-of-the-art visual language model that significantly outperforms existing models in various visual language tasks.
 
 ## 🔥 Updates
 
-- **`2025.09.08`** 🌟 **SAIL-VL2 Technical Report** is now available at [arxiv]().
+- **`2025.09.18`** 🌟 **SAIL-VL2 Technical Report** is now available at [arxiv](https://arxiv.org/abs/2509.14033).
 
 
 ## 🌟 Highlights
